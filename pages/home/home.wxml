@@ -1,0 +1,18 @@
+<import src="../template/goods-list"/>
+<view class="container">
+  <view class="swiper">
+    <swiper autoplay="true" interval="5000" duration="1000">
+      <swiper-item wx:for="{{brandImgs}}" wx:key="id">
+        <image src="{{item}}" mode="widthFix" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="goods-hots">
+    <text class="title">热门推荐</text>
+  </view>
+<block>
+    <view>
+        <template is="goods-list" data="{{ hots }}"/>
+    </view>
+</block>
+</view>

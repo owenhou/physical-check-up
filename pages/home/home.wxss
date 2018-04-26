@@ -1,0 +1,23 @@
+.swiper swiper {
+  height: 480rpx;
+}
+
+.swiper swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.goods-hots {
+  box-sizing: border-box;
+  background-color: #f8f9fb;
+  margin-top: 40rpx;
+}
+
+.goods-hots .title{
+  display: flex;
+  margin-bottom: 10rpx;
+  width: 100%;
+  flex: 1;
+  padding: 20rpx;
+  font-size:35rpx;
+}
