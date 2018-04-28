@@ -21,3 +21,5 @@
   padding: 20rpx;
   font-size:35rpx;
 }
+
+@import "../template/goods-list.wxss"

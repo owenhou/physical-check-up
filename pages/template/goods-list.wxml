@@ -1,13 +1,16 @@
 <template name="item">
   <navigator url="htttp://www.baidu.com">
       <view class="item">
-          <image src="{{item.mainImg}}"></image>
-          <view class="item-title">
-            <text>{{item.title}}</text>
-          </view>
-          <view>
-            <text class="item-price">{{item.price}}</text>
-          </view>
+        <view class="item-img"> 
+        <image src="{{item.mainImg}}" mode='aspectFill' background-size="cover"></image>
+        </view>
+          <view class="item-txt-box">
+                <view class="line">
+                    <text class="name" >{{item.title}}</text>
+                    <text class="s">|</text>
+                    <text class="price">{{item.price}}元起</text>
+                </view>
+            </view>
       </view>
   </navigator>
 </template>
