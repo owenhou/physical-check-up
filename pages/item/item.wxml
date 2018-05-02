@@ -1,2 +1,26 @@
 <!--pages/item/item.wxml-->
-<text>pages/item/item.wxml</text>
+<import src="../template/table"/>
+<view class="container">
+	<view class="item-banner">
+		<image src="{{item.image}}" mode="widthFix"></image>
+	</view>
+	<view class="item-detail">
+		<view class="item-name">
+			<text>套餐名称: {{item.name}}</text>
+		</view>
+		<view class="item-price">
+			<text>市场价格: </text><text class="price">￥{{item.price}}</text>
+		</view>
+		<view class="item-projects">
+			<text>体检项目</text>
+      <view>
+        <template is="table" data="{{...tableData}}"/>
+      </view>
+		</view>
+    <view class="h50"></view>
+	</view>
+  
+    <view class="btn fix-btn-buy">
+        <button type="primary">立即预约</button>
+    </view>
+</view>

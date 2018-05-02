@@ -1,48 +1,36 @@
 .item {
-  height: 350rpx;
-  padding: 25rpx 0;
+  height: 260px;
   position: relative;
+  border: 2rpx #DDDDDD solid;
+  margin: 15rpx 0;
+  border-radius: 10px
 }
-.item .item-img {
-   position: absolute;
-    left:0;
-    top:0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+
+.item .item-img{
+  height: 200px;
+  overflow: hidden;
+  width:100%;
 }
+
 .item .item-img image{
-  height: 100%;
-  width: 100%;
+  width:100%;
 }
+
+
 
 .item .item-txt-box{
-    position: absolute;
-    left:0;
-    top:0;
-    display: table;
-    z-index: 0;
-   height: 100%;
-  width: 100%;
-}
-
-.item .line{
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    height: 63rpx;
-    line-height: 63rpx;
+position: relative;
 }
 
 .item .line text{
     font-size: 35rpx;
     font-weight: 700;
     text-shadow: 1rpx 1rpx rgba(0,0,0,.32);
-    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding:10rpx 0;
 }
-
-.brand-list .item .line .s{
-    padding: 0 10rpx;
-    font-size: 40rpx;
+.item .line .price{
+  color:	#FF3333;
 }
