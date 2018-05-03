@@ -12,7 +12,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
+    let all = [{ "mainImg": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518268771.jpg", "title": "title", "price": "1600", "id":1 },
+    { "mainImg": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518268771.jpg", "title": "title", "price": "1600" , "id":2}];
+    this.setData({ list: all});
   },
 
   /**

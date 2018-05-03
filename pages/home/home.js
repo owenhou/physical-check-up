@@ -6,8 +6,8 @@ Page({
    */
   data: {
 
-    hots: [{ "mainImg": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518268771.jpg", "title": "title","price":"1600"},
-      { "mainImg": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518268771.jpg", "title": "title", "price": "1600" }]
+    hots: [{ "mainImg": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518268771.jpg", "title": "臻爱父母基础套餐-A","price":"1600"},
+      { "mainImg": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518268771.jpg", "title": "臻爱父母基础套餐-B", "price": "1200" }]
 
   },
 
@@ -19,7 +19,6 @@ Page({
     var brandImgs = ["https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518268771.jpg", "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518268771.jpg"];
     this.setData({ brandImgs: brandImgs });
     this.setData({hots:this.data.hots});
-    console.log('111');
     wx.hideLoading();
   },
 

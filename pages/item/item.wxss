@@ -52,4 +52,9 @@
     left: 0px;
     
 }
+
+.fix-btn-buy button{
+    margin: 5px 15px;
+    
+}
 @import "../template/table.wxss"

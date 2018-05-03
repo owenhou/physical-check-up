@@ -1,2 +1,20 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<view class="container">
+  <block wx:for="{{list}}" wx:key="id">
+     <navigator url="../item/item?id=1">
+        <view class="item-cell">
+            <view class="item-icon">
+                <image src="{{item.mainImg}}" style="margin-right: 5px;vertical-align: middle;width:150px; height: 150px;" mode=""></image>
+            </view>
+            <view class="item-cell_desc">
+              <view class="item-cell__bd">臻爱父母基础套餐阿斯顿发</view>
+              <view class="item-cell__ft">优惠价：￥{{item.price}}</view>
+              <view class="item-cell-btn"><button type="warn" size="mini">查看详情</button></view>
+            </view>
+            
+
+        </view>
+      </navigator>
+  </block>
+  
+</view>
